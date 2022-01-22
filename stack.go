@@ -47,9 +47,9 @@ func (s *Stack) Size() int {
 }
 
 func (s *Stack) Print() {
-	fmt.Printf("stack size is %d", s.Size())
-    	fmt.Printf("stack empty is %v", s.Empty())
-	fmt.Printf("stack top is %v", s.Top())
+	fmt.Printf("stack size is %d\n", s.Size())
+    	fmt.Printf("stack empty is %v\n", s.Empty())
+	fmt.Printf("stack top is %v\n", s.Top())
 	fmt.Printf("stack is %s", func() string {
 		var str string
 		for i := len(*s) - 1; i >= 0; i-- {
