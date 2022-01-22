@@ -1,0 +1,17 @@
+mode: set
+stack/stack.go:12.24,15.2 2 1
+stack/stack.go:17.40,19.2 1 1
+stack/stack.go:21.23,23.17 2 1
+stack/stack.go:27.2,27.22 1 1
+stack/stack.go:23.17,26.3 2 1
+stack/stack.go:30.35,32.17 2 1
+stack/stack.go:35.2,35.23 1 1
+stack/stack.go:32.17,34.3 1 1
+stack/stack.go:38.30,39.18 1 1
+stack/stack.go:42.2,42.14 1 1
+stack/stack.go:39.18,41.3 1 1
+stack/stack.go:45.27,47.2 1 1
+stack/stack.go:49.25,50.40 1 1
+stack/stack.go:50.40,52.37 2 1
+stack/stack.go:55.3,55.37 1 1
+stack/stack.go:52.37,54.4 1 1
