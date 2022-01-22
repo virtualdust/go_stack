@@ -21,7 +21,7 @@ func (s *Stack) Push(e ...interface{}) {
 func (s *Stack) Pop() {
 	length := len(*s)
 	if length == 0 {
-		log.Printf("Error:Try to pop a empty stack")
+		log.Printf("Error:Try to pop an empty stack")
 		return
 	}
 	*s = (*s)[:length-1]
