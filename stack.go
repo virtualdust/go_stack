@@ -42,12 +42,12 @@ func (s *Stack) Empty() bool {
 	return false
 }
 
-func (s *Stack) Len() int {
+func (s *Stack) Size() int {
 	return len(*s)
 }
 
 func (s *Stack) Print() {
-	fmt.Printf("stack len is %d", s.Len())
+	fmt.Printf("stack size is %d", s.Size())
     	fmt.Printf("stack empty is %v", s.Empty())
 	fmt.Printf("stack top is %v", s.Top())
 	fmt.Printf("stack is %s", func() string {
