@@ -14,36 +14,36 @@ func NewStack() *Stack {
 	return &stack
 }
 
+func (s *Stack) Size() int {
+	return len(*s)
+}
+
 func (s *Stack) Push(e ...interface{}) {
 	*s = append(*s, e...)
 }
 
 func (s *Stack) Pop() {
-	length := len(*s)
-	if length == 0 {
+	size := s.Size()
+	if size == 0 {
 		log.Printf("Error:Try to pop an empty stack")
 		return
 	}
-	*s = (*s)[:length-1]
+	*s = (*s)[:size-1]
 }
 
 func (s *Stack) Top() interface{} {
-	length := len(*s)
-	if length == 0 {
+	size := s.Size()
+	if size == 0 {
 		return nil
 	}
-	return (*s)[length-1]
+	return (*s)[size-1]
 }
 
 func (s *Stack) Empty() bool {
-	if len(*s) == 0 {
+	if s.Size() == 0 {
 		return true
 	}
 	return false
-}
-
-func (s *Stack) Size() int {
-	return len(*s)
 }
 
 func (s *Stack) Print() {
