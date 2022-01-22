@@ -47,7 +47,10 @@ func (s *Stack) Len() int {
 }
 
 func (s *Stack) Print() {
-	fmt.Printf("stack: %s", func() string {
+	fmt.Printf("stack len is %d", s.Len())
+    	fmt.Printf("stack empty is %v", s.Empty())
+	fmt.Printf("stack top is %v", s.Top())
+	fmt.Printf("stack is %s", func() string {
 		var str string
 		for i := len(*s) - 1; i >= 0; i-- {
 			str = fmt.Sprintf("%s %v", str, (*s)[i])
