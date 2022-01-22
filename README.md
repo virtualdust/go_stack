@@ -1,2 +1,2 @@
-# go_stack
+# stack
 a simple stack implemented by golang
